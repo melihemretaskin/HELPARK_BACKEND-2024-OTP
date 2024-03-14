@@ -1,0 +1,13 @@
+﻿@{
+    // View başlığını ayarla
+    ViewData["Title"] = "SendOtp";
+
+}
+
+<form asp-controller="GenerateOtp" asp-action="SendOtp" method="post">
+    <div class="form-group">
+        <label for="phoneNumber">Phone Number</label>
+        <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number">
+    </div>
+    <button type="submit" class="btn btn-primary">Verify</button>
+</form>

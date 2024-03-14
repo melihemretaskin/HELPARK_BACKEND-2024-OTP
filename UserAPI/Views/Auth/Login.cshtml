@@ -1,0 +1,13 @@
+﻿@{
+    // View başlığını ayarla
+    ViewData["Title"] = "Login";
+
+}
+
+<form asp-controller="Auth" asp-action="VerifyPhoneNumber" method="post">
+    <div class="form-group">
+        <label for="phoneNumber">Phone Number</label>
+        <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number">
+    </div>
+    <button type="submit" class="btn btn-primary">Verify</button>
+</form>

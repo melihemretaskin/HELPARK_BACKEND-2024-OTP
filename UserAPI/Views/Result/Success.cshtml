@@ -1,0 +1,15 @@
+﻿@{
+    // View başlığını ayarla
+    ViewData["Title"] = "Success";
+
+    // JSON verisi oluştur
+    var jsonData = new
+    {
+        Status = true
+    };
+
+    // JSON verisini dön
+    var jsonOutput = Newtonsoft.Json.JsonConvert.SerializeObject(jsonData);
+}
+
+@jsonOutput

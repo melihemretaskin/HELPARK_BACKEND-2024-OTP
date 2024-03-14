@@ -1,0 +1,18 @@
+﻿@{
+    // View başlığını ayarla
+    ViewData["Title"] = "Fail";
+
+    // JSON verisi oluştur
+    var jsonData = new
+    {
+        message = "Fail",
+        statusCode = false,
+        timeStamp = DateTime.Now.ToString("dd.MM.yyyy hh:mm:ss")
+
+    };
+
+    // JSON verisini dön
+    var jsonOutput = Newtonsoft.Json.JsonConvert.SerializeObject(jsonData);
+}
+
+@jsonOutput

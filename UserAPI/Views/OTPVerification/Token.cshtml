@@ -1,0 +1,15 @@
+﻿@{
+    // View başlığını ayarla
+    ViewData["Title"] = "Token";
+
+    // JSON verisi oluştur
+    var jsonData = new
+    {
+        Token = "dF0G0AKRK291F_dASOF929100F*A"
+    };
+
+    // JSON verisini dön
+    var jsonOutput = Newtonsoft.Json.JsonConvert.SerializeObject(jsonData);
+}
+
+@jsonOutput
